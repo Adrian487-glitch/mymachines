@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--PLEASE FORMATER TEKSTEN SÅ DET SER BEDRE UT!!!-->
 <html lang="no">
 <head>
 <meta charset="UTF-8">
@@ -10,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/*Ok, nais smoot i guess?*/
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +22,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-
+/*Du har god struktur på stylingen din.*/
 .site-header {
     position: sticky;
     top: 0;
@@ -83,6 +85,8 @@ main {
     align-items: center;
 }
 
+/*Klarer du å lage variabler så du
+slipper og skrive samme 'value's hele tiden?*/
 .image-box,
 .list-box {
     background-color: #6CCFF6;
@@ -127,7 +131,8 @@ main {
     padding: 22px;
     line-height: 1.6;
 }
-
+/*EN utfordring til deg!
+Prøv ut variabler i css styling*/
 .navigation {
     background-color: #DDD78D;
     border-radius: 8px;
@@ -167,6 +172,7 @@ code {
     border-radius: 4px;
 }
 
+/*Vet du hva dette er??*/
 pre {
     background-color: #252525;
     color: white;
@@ -208,7 +214,7 @@ pre {
     font-weight: bold;
     color: #111;
 }
-
+ /*Hva er swatch? noen kommentarer for å forklare use-case??!*/
 .swatch.dark {
     background: #41463D;
     color: white;
@@ -233,7 +239,7 @@ pre {
 </style>
 </head>
 <body>
-
+    <!--Jeg må be deg formatere koden igjen (reminder)-->
 <header class="site-header">
     <nav>
         <a href="#git">Git</a>
@@ -246,16 +252,20 @@ pre {
 </header>
 
 <main>
-
+<!--Bra use-case av både id og class her!-->
 <section class="page-section" id="git">
     <div class="top-section">
         <div class="image-box">
             <h1>Hva er Git?</h1>
+        <!--Dette liker ikke jeg, image i prosjektet er bedre for en clean kode og workflow....
+        , men lærer sa bare lever html fil så, du er unnskyldt-->
             <img src="data:image/png;base64,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" alt="Illustrasjon som viser hvordan Git lagrer forskjellige versjoner av et prosjekt">
         </div>
 
         <div class="list-box">
             <h2>Nyttige Git-kommandoer</h2>
+            <!--Er denne metoden mest effektiv?
+            - er det lett å legge til mer teskt i samme format??!-->
             <div class="command"><strong><code>git init</code></strong>Lager et nytt Git-repository i mappen du jobber i.</div>
             <div class="command"><strong><code>git status</code></strong>Viser hvilke filer som er endret.</div>
             <div class="command"><strong><code>git add .</code></strong>Legger endrede filer klare for neste commit.</div>
@@ -274,12 +284,17 @@ pre {
         </div>
     </div>
 </section>
-
+<!--HUSK FORMATERING AV KODE | PLEASE!!-->
 <section class="page-section" id="vscode">
     <div class="single-content">
         <div class="image-box">
             <h1>Git i VS Code</h1>
 <pre>Source Control
+    <!--
+    FORMATERING funker ikke i <pre> taggen? 
+    FINN UT AV DETTE OG KOMMENTER HVORFOR <pre> brukers i dett
+    området!
+    -->
 
 Changes
   M index.html
@@ -298,6 +313,7 @@ Oppdater nettsiden
             <p>VS Code har innebygd støtte for Git. På venstre side finner du <strong>Source Control</strong>.</p>
             <p>Her kan du se hvilke filer som er endret, velge filer som skal legges til i en commit og skrive en commit-melding.</p>
             <p>Du kan også bruke terminalen i VS Code og skrive vanlige Git-kommandoer som:</p>
+            <!--GJØR SOM KOMMENTAREN OVENFOR SIER!-->
 <pre>git status
 git add .
 git commit -m "Oppdatering"
@@ -311,6 +327,7 @@ git push</pre>
     <div class="top-section">
         <div class="image-box">
             <h1>Hva er Git Bash?</h1>
+            <!--LES kommentar ovenfor!! why?-->
 <pre>$ git status
 $ git add .
 $ git commit -m "Første commit"
@@ -319,6 +336,8 @@ $ git push</pre>
 
         <div class="list-box">
             <h2>Nyttige Bash-kommandoer</h2>
+            <!--ER DETTE DEN BESTE METODEN? utforsk og endre dersom den ikke
+            er det!-->
             <div class="command"><strong><code>pwd</code></strong>Viser hvilken mappe du befinner deg i.</div>
             <div class="command"><strong><code>ls</code></strong>Viser filer og mapper.</div>
             <div class="command"><strong><code>cd mappe</code></strong>Går inn i en mappe.</div>
@@ -361,6 +380,11 @@ $ git push</pre>
     <div class="single-content">
         <div class="image-box">
             <h1>.md</h1>
+            <!--
+                Finn ut om <pre> er best eller om det finnes bedre 
+                alternativ og dersom det finnes må du
+                endre dette!!
+            -->
 <pre># Mitt prosjekt
 
 Dette er et **Git-prosjekt**.
@@ -420,3 +444,10 @@ Dette er et **Git-prosjekt**.
 </main>
 </body>
 </html>
+<!--
+
+    DU HAR SIDEN SIST ALLEREDE ENDRET OG LAGT ALT TIL EN HTML FIL! naiss
+    GOOD JOB sånn generelt sett..
+    IKKE FORMATERINGEN THOUGH!!!!   
+
+-->
