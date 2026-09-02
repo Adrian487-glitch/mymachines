@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specs</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+        }
+        .specs{
+            justify-content: center;
+            flex-basis: 250px;
+            flex-grow: 1;
+            perspective: 1000px;
+        }
+        .inner {
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 180px;
+        }
+        .back {
+            transform: rotateY(180deg);
+            height: 110px;
+
+        }
+        .back, .front {
+            backface-visibility: hidden;
+            position: absolute;
+            width: 100%;
+            background-color: whitesmoke;
+            border: 2px dashed black;
+            border-radius: 20px;
+        }
+        .specs:hover .inner {
+            transform: rotateY(180deg);
+        }
+        .hint {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        pre {
+            font-family: Arial;
+            padding: 10px;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Information</h1> <!--Header-->
+
+    <div class="hint"> <!-- Hint -->
+        Hold musen over navnene eller dobbeltrykk i mobilmodus
+    </div>
+
+    <div class="container"> <!-- Hovedinnhold -->
+        <div class="specs"> 
+            <div class="inner">
+                <div class="front"> <!-- Front av kortet -->
+                    <h2>PS5</h2>
+                </div>
+                <div class="back"> <!-- Baksiden av kortet -->
+                    <pre>
+                    Lagring: 848 GB OG 1TB SSD
+                    RAM: 16 GB GDDR6
+                    CPU: AMD Zen 2, spesiallaget for PS5 </pre>
+                </div>
+            </div>
+        </div>
+        <div class="specs">
+            <div class="inner">
+                <div class="front"> <!-- Front av kortet -->
+                    <h2>Skole-pc</h2>
+                </div>
+                <div class="back"> <!-- Baksiden av kortet -->
+                    <pre>
+                    CPU: Intel Core Ultra 5 125H
+                    RAM: 16 GB
+                    Lagring: 238 GB </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
